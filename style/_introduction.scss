@@ -1,0 +1,41 @@
+.introduction-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  width: 75%;
+  margin: auto;
+  position: relative;
+
+  .introduction-part-one {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 16rem;
+  }
+
+  .intro-article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .intro-name {
+    font-size: 1.2rem;
+
+    span {
+      font-size: 3.6rem;
+    }
+  }
+
+  .intro-sub {
+    font-size: 1.6rem;
+  }
+
+  .memoji {
+    height: 280px;
+    width: 280px;
+  }
+}

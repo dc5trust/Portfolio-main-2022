@@ -1,0 +1,155 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  -webkit-transition: background-color 1.3s ease-in-out;
+  transition: background-color 1.3s ease-in-out;
+  overflow: hidden;
+}
+
+.dark-mode-background {
+  background-color: black;
+  color: white;
+}
+
+.nav-container {
+  height: 5.5vh;
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.07), 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.07), 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.nav-container .nav-sub-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  margin: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.nav-container .nav-sub-container .nav-title {
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+}
+
+.nav-container .nav-sub-container .nav-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 25rem;
+      flex-basis: 25rem;
+}
+
+.nav-container .nav-sub-container .far {
+  font-size: 1.4rem;
+  -webkit-transition: all 1.3s ease-in-out;
+  transition: all 1.3s ease-in-out;
+}
+
+.nav-container .nav-sub-container ul {
+  list-style: none;
+  width: 20rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 740px) {
+  .nav-title {
+    text-align: center;
+    width: 100%;
+  }
+  .nav-items {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+  }
+}
+
+.introduction-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 50vh;
+  width: 75%;
+  margin: auto;
+  position: relative;
+}
+
+.introduction-container .introduction-part-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 16rem;
+}
+
+.introduction-container .intro-article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.introduction-container .intro-name {
+  font-size: 1.2rem;
+}
+
+.introduction-container .intro-name span {
+  font-size: 3.6rem;
+}
+
+.introduction-container .intro-sub {
+  font-size: 1.6rem;
+}
+
+.introduction-container .memoji {
+  height: 280px;
+  width: 280px;
+}
+/*# sourceMappingURL=style.css.map */
