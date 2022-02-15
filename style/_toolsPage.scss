@@ -1,0 +1,153 @@
+#tools {
+  height: 80vh;
+  z-index: 14;
+  scroll-margin-top: 7rem;
+  margin-bottom: 2.5rem;
+}
+
+.tools-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3rem;
+  height: 5rem;
+}
+.tools-title {
+  font-size: 2.5rem;
+}
+.tools-sub-title {
+  font-size: 1.2rem;
+}
+
+.tools-container {
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 30rem);
+  grid-gap: 1rem;
+
+  .circle {
+    height: 15rem;
+    width: 15rem;
+    background-color: rgb(244, 244, 244);
+    border-radius: 50%;
+    align-self: center;
+    justify-self: center;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem;
+    flex-direction: column;
+    cursor: pointer;
+    transition: box-shadow 1s;
+
+    &:hover {
+      background: rgb(244, 244, 244);
+      box-shadow: inset 0px 0px 5px #c1c1c1;
+      border: none;
+      // box-shadow: inset 0px 0px 5px #c1c1c1;
+      // box-shadow: inset 0px 0px 5px #c1c1c1;
+      // outline: none;
+    }
+  }
+}
+
+//images within circles
+
+.circle-image {
+  height: 6.5rem;
+  width: 7rem;
+  margin-bottom: 1rem;
+}
+
+.html {
+  border: 5px solid #fc992c;
+}
+
+.css {
+  border: 5px solid #0a73b7;
+}
+.js {
+  border: 5px solid #e9c932;
+}
+.react {
+  border: 5px solid #61dbfb;
+}
+.git {
+  border: 5px solid #f05233;
+}
+.sass {
+  border: 5px solid #ce649a;
+}
+
+.hide {
+  opacity: 0;
+  height: 0;
+  transition: opacity 1s ease-in-out;
+  transition: height 1s ease-in-out;
+  overflow: hidden;
+}
+.circle:hover .hide {
+  height: auto;
+  opacity: 1;
+}
+
+//Tools Mobile Page
+
+@media only screen and (max-width: 760px) {
+  body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+  }
+  html {
+    height: -webkit-fill-available;
+  }
+  #tools {
+    height: 100vh;
+    margin-bottom: 3rem;
+  }
+  .tools-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 518px) {
+  body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+  }
+  html {
+    height: -webkit-fill-available;
+  }
+  #tools {
+    height: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .tools-container {
+    grid-gap: 1rem;
+    .circle {
+      height: 9rem;
+      width: 9rem;
+    }
+  }
+
+  .circle-image {
+    height: 3.5rem;
+    width: 4rem;
+    // margin-bottom: 0rem;
+  }
+
+  .hide {
+    opacity: 1;
+    height: auto;
+    // transition: opacity 1s ease-in-out;
+    // transition: height 1s ease-in-out;
+    overflow: hidden;
+  }
+}
