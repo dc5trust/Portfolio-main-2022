@@ -6,7 +6,7 @@
   z-index: 1;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), transparent),
+  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
     url(/images/Mountainsfour.jpg);
   background-size: cover;
 
@@ -15,7 +15,7 @@
     justify-content: flex-start;
     align-items: center;
     position: absolute;
-    top: 23rem;
+    top: 43rem;
     width: 80%;
     margin: auto;
   }
@@ -24,22 +24,22 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    color: #000000;
+    color: #ffffff;
     // background-color: aqua;
   }
 
   .intro-name {
-    font-size: 1.3rem;
-    color: #000000;
+    font-size: 4.3rem;
+    color: #ffffff;
 
     span {
-      font-size: 4rem;
+      font-size: 5rem;
       color: rgb(44, 255, 244);
     }
   }
 
   .intro-sub {
-    font-size: 1rem;
+    font-size: 2.5rem;
     padding-bottom: 1rem;
   }
 

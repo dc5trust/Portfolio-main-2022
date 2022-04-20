@@ -1,8 +1,68 @@
 #tools {
-  height: 80vh;
+  height: 100vh;
   z-index: 14;
-  scroll-margin-top: 7rem;
+  scroll-margin-top: 6rem;
   margin-bottom: 2.5rem;
+}
+
+.mac-circle{
+  height: 13px;
+  width: 13px;
+  border-radius: 10px;
+  position: absolute;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.tools-main-container{
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  // background-color: #e9c932;
+  
+  .tools-popup-information{
+    height: 80rem;
+    // width: 30rem;
+    // background-color: #ffcece;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+  .pop-up{
+    background-color: #ebebeb;
+    height: 50rem;
+    width: 40rem;
+    border-radius: 10px;
+    border-top: 38px rgb(107, 106, 106) solid;
+    opacity: .90;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    position: relative;
+  }
+  .pop-up-description{
+    font-size: 2.5rem;
+    padding: 3.5rem;
+  }
+ 
+
+  .red{
+    top: -25px;
+    left: 18px;
+    background-color: #ff0000;
+  }
+  .yellow{
+    top: -25px;
+    left: 43px;
+    background-color: #fafe07;
+  }
+  .green{
+    top: -25px;
+    left: 67px;
+    background-color: #1efd00;
+
+  }
 }
 
 .tools-title-container {
@@ -10,28 +70,31 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 3rem;
-  height: 5rem;
+  height: 18vh;
+  // background-color: #0a73b7;
 }
 .tools-title {
-  font-size: 2.5rem;
+  font-size: 7rem;
 }
 .tools-sub-title {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 
 .tools-container {
+  // width: 45%;
   height: 100%;
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 30rem);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 30rem);
   grid-gap: 1rem;
+  flex-grow: 1;
+  
 
   .circle {
-    height: 15rem;
-    width: 15rem;
+    height: 15.5rem;
+    width: 15.5rem;
     background-color: rgb(244, 244, 244);
     border-radius: 50%;
     align-self: center;
@@ -59,8 +122,8 @@
 //images within circles
 
 .circle-image {
-  height: 6.5rem;
-  width: 7rem;
+  height: 5.5rem;
+  width: 5.5rem;
   margin-bottom: 1rem;
 }
 

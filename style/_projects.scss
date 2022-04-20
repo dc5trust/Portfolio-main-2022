@@ -1,10 +1,19 @@
 #projects {
-  min-height: 120vh;
+  min-height: 150vh;
   background-color: rgb(240, 240, 240);
   //   overflow: hidden;
   //   scroll-margin-top: 20px;
   scroll-margin-top: 4.5rem;
 }
+
+// .mac-circle{
+//   height: 13px;
+//   width: 13px;
+//   border-radius: 10px;
+//   position: absolute;
+//   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+//   cursor: pointer;
+// }
 
 .projects-title-container {
   //   height: 10vh;
@@ -30,25 +39,70 @@
   width: 85%;
   margin: auto;
 }
+.project-window{
+  height: 55rem;
+  width: 35rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5%; 
+  border-top: 3.8rem solid rgb(93, 93, 93);
+  background-image: url("/images/Mountains.jpg");
+  background-size: 180%;
+  background-position: cover;
+  position: relative;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+
+  .project-title{
+    position: absolute;
+    top: -33px;
+    margin: auto;
+    right: 20px;
+    color: white;
+    font-size: 2rem;
+  }
+  
+  .red{
+    top: -25px;
+    left: 18px;
+    background-color: #ff0000;
+  }
+  .yellow{
+    top: -25px;
+    left: 43px;
+    background-color: #fafe07;
+  }
+  .green{
+    top: -25px;
+    left: 67px;
+    background-color: #1efd00;
+
+  }
+  .boxes-button-container{
+    position: absolute;
+    bottom: 40px;
+    // background-color: #ff0000;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
 .project-boxes {
-  height: 35rem;
-  width: 23rem;
+  height: 55rem;
+  width: 35rem;
   background-color: rgb(255, 255, 255);
   justify-self: center;
   border-radius: 5%;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-
   cursor: pointer;
-
-  //   z-index: 2;
 }
 
 .project-image-container {
   background-image: url("/images/Mountains.jpg");
-  height: 23rem;
-  width: 23rem;
-  background-size: 150%;
-  background-position: center;
+  height: 40rem;
+  width: 35rem;
+  background-size: 180%;
+  background-position: cover;
   border-top-left-radius: 5%;
   border-top-right-radius: 5%;
   overflow: hidden;
