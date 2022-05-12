@@ -20,16 +20,9 @@ button {
   padding: 1rem 2rem;
   border: none;
   border-radius: 1.6rem;
-  background-color: lightseagreen;
-  border: 1px solid lightseagreen;
-  color: white;
+  color: rgb(0, 0, 0);
   cursor: pointer;
   font-family: "Poppins", sans-serif;
-}
-button:hover {
-  background-color: rgb(255, 255, 255);
-  border: 1px solid lightseagreen;
-  color: black;
 }
 
 a {
@@ -171,23 +164,34 @@ a {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  color: #ffffff;
+  color: #000000;
+  flex-basis: 70rem;
 }
 #introduction-container .intro-name {
-  font-size: 4.3rem;
+  font-size: 4.4rem;
   color: #ffffff;
+  padding: 0.5rem;
 }
 #introduction-container .intro-name span {
-  font-size: 5rem;
-  color: rgb(44, 255, 244);
+  font-size: 6.5rem;
+  color: rgb(0, 0, 0);
 }
 #introduction-container .intro-sub {
-  font-size: 2.5rem;
-  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  color: rgb(255, 255, 255);
+}
+#introduction-container .intro-self-memoji {
+  flex-basis: 30rem;
+  height: 35rem;
+  position: relative;
 }
 #introduction-container .memoji {
-  height: 280px;
-  width: 280px;
+  height: 260px;
+  width: 260px;
+  position: absolute;
+  right: 10px;
+  top: 20px;
 }
 
 .main-background {
@@ -196,6 +200,24 @@ a {
   overflow: hidden;
 }
 
+.introduction-button-container {
+  height: 12.5rem;
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.introduction-button-container .intro-button {
+  width: 30%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(129, 129, 129);
+  margin-right: 1rem;
+  padding: 1.4rem 1.7rem;
+}
+.introduction-button-container .intro-button:hover {
+  box-shadow: none;
+  border: 1px solid white;
+}
 @media only screen and (max-width: 795px) {
   #introduction-container .introduction-part-one {
     display: flex;
@@ -686,6 +708,8 @@ label {
   grid-template-rows: repeat(3, minmax(100px, 300px));
   grid-gap: 1rem;
   justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
 }
 #youtube .youtube-image {
   height: 100%;
