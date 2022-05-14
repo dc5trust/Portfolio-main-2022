@@ -156,9 +156,9 @@ a {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 43rem;
   width: 90%;
   margin: auto;
+  height: 90%;
 }
 #introduction-container .intro-article {
   display: flex;
@@ -184,7 +184,6 @@ a {
 #introduction-container .intro-self-memoji {
   flex-basis: 30rem;
   height: 35rem;
-  background-color: rgb(216, 216, 216);
   position: relative;
 }
 #introduction-container .memoji {
@@ -229,8 +228,26 @@ a {
     margin: auto;
     flex-wrap: wrap;
   }
-  #introduction-container .introduction-part-one .introduction-button-container {
-    width: 50%;
+  #introduction-container .intro-name {
+    font-size: 3rem;
+  }
+  #introduction-container .intro-name span {
+    font-size: 5rem;
+    color: rgb(222, 255, 150);
+  }
+  #introduction-container .intro-self-memoji {
+    margin: auto;
+    width: 90%;
+  }
+  #introduction-container .memoji {
+    height: 300px;
+    width: 300px;
+    width: 100%;
+    margin: auto;
+    opacity: 0.9;
+  }
+  #introduction-container .introduction-button-container {
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;

@@ -8,16 +8,15 @@
   overflow: hidden;
   background: linear-gradient(rgba(0, 0, 0, 1.0), transparent), linear-gradient(rgba(0, 0, 0, .10), transparent), url(/images/Mountainsfour.jpg);
   background-size: cover;
-
+  // flex-direction: column;
   .introduction-part-one {
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 43rem;
     width: 90%;
     margin: auto;
-    // background-color: aquamarine;
+    height: 90%;
   }
 
   .intro-article {
@@ -50,8 +49,7 @@
   .intro-self-memoji{
     flex-basis: 30rem;
     height: 35rem;
-    // background-color: aqua;
-    background-color: rgb(216, 216, 216);
+    // background-color: rgb(216, 216, 216);
 
     position: relative;
   }
@@ -114,20 +112,45 @@
       width: 85%;
       margin: auto;
       flex-wrap: wrap;
+    }
+    .intro-article {
+      
+    }
 
-      .intro-article {
+    .intro-name {
+      font-size: 3rem;
+      // color: #ffffff;
+      // padding: .5rem;
+      
+      span {
+        font-size: 5rem;
+        color: rgb(222, 255, 150);
       }
-      .intro-self-memoji{
-
-      }
+    }
+  
+    .intro-sub {
+      
+    }
+    .intro-self-memoji{
+      margin: auto;
+      width: 90%;
+      // background-color: aqua;
+    }
+    .memoji {
+      // background-color: azure;
+      height: 300px;
+      width: 300px;
+      width: 100%;
+      margin: auto;
+      opacity: .9;
+    }
       .introduction-button-container {
-        // background-color: aquamarine;
-        width: 50%;
+        width: 100%;
         display: flex;
         justify-content: space-around;
         align-items: center;
         margin: auto;
       }
-    }
+    
   }
 }
