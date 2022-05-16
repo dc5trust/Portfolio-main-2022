@@ -187,7 +187,6 @@ a {
   position: relative;
 }
 #introduction-container .memoji {
-  border-radius: 40%;
   height: 270px;
   width: 270px;
   position: absolute;
@@ -251,6 +250,34 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #introduction-container .intro-name {
+    font-size: 2.7rem;
+  }
+  #introduction-container .intro-name span {
+    font-size: 3.6rem;
+  }
+  #introduction-container .intro-sub {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 375px) {
+  #introduction-container .intro-sub {
+    font-size: 1.3rem;
+  }
+  #introduction-container .intro-self-memoji {
+    margin: auto;
+    width: 100%;
+  }
+  #introduction-container .memoji {
+    height: 220px;
+    width: 220px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
     margin: auto;
   }
 }

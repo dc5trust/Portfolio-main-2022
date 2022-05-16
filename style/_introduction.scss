@@ -55,7 +55,7 @@
   }
 
   .memoji {
-    border-radius: 40%;
+    // border-radius: 40%;
     height: 270px;
     width: 270px;
     position: absolute;
@@ -150,6 +150,80 @@
         justify-content: space-around;
         align-items: center;
         margin: auto;
+      }
+    
+  }
+}
+
+@media only screen and (max-width: 500px){
+  #introduction-container {
+    .introduction-part-one {
+     
+    }
+    .intro-article {
+      
+    }
+
+    .intro-name {
+      font-size: 2.7rem;
+      
+      span {
+        font-size: 3.6rem;
+        
+      }
+    }
+  
+    .intro-sub {
+      font-size: 1.3rem;
+    }
+    .intro-self-memoji{
+      
+    }
+    .memoji {
+      
+    }
+      .introduction-button-container {
+        
+      }
+    
+  }
+}
+
+@media only screen and (max-width: 375px){
+
+  #introduction-container {
+    .introduction-part-one {
+      
+    }
+    .intro-article {
+      
+    }
+
+    .intro-name {
+    
+      
+      span {
+        
+      }
+    }
+  
+    .intro-sub {
+      font-size: 1.3rem;
+    }
+    .intro-self-memoji{
+      margin: auto;
+      width: 100%;
+    }
+    .memoji {
+      height: 220px;
+      width: 220px;
+      object-fit: cover;
+      width: 100%;
+      margin: auto;
+      
+    }
+      .introduction-button-container {
+        
       }
     
   }
