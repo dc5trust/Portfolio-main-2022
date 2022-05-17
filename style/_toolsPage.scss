@@ -170,7 +170,7 @@
     height: -webkit-fill-available;
   }
   #tools {
-    height: 100vh;
+    height: 100%;
     margin-bottom: 3rem;
   }
   .tools-container {
@@ -179,19 +179,53 @@
   }
 }
 
-@media only screen and (max-width: 518px) {
-  body {
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
-  }
-  html {
-    height: -webkit-fill-available;
-  }
-  #tools {
-    height: 100%;
-    margin-bottom: 3rem;
-  }
+@media only screen and (max-width: 798px){
 
+  .tools-container {
+    width: 39rem;
+    height: 43rem;
+    grid-template-rows: repeat(3, 13rem);
+    
+  
+    .circle {
+      height: 12rem;
+      width: 12rem;
+      font-size: .8rem;
+      &:hover {
+        
+      }
+    }
+  }
+  .tools-main-container{
+    
+    .tools-popup-information{
+      height: 40rem;
+    }
+    .pop-up{
+      height: 30rem;
+      width: 40rem;
+    }
+    .pop-up-description{
+      font-size: 1.7rem;
+      padding: 3.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 518px) {
+
+  .tools-main-container{
+    height: 100%;
+  
+    .pop-up{
+      height: 25rem;
+      width: 30rem;
+    }
+    .pop-up-description{
+      font-size: 1.3rem;
+    }
+  }
+ 
   .tools-container {
     grid-gap: 1rem;
     .circle {
@@ -203,14 +237,11 @@
   .circle-image {
     height: 3.5rem;
     width: 4rem;
-    // margin-bottom: 0rem;
   }
 
   .hide {
     opacity: 1;
     height: auto;
-    // transition: opacity 1s ease-in-out;
-    // transition: height 1s ease-in-out;
     overflow: hidden;
   }
 }
