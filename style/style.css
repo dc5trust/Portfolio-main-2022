@@ -158,7 +158,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 94.5vh;
+  height: 95vh;
   z-index: 1;
   position: relative;
   overflow: hidden;
@@ -665,27 +665,34 @@ a {
   }
 }
 #contact {
-  height: 84vh;
+  height: 84.5vh;
+  scroll-margin-top: 5rem;
+  background-color: rgb(237, 237, 237);
 }
 
 .contact-container {
-  height: 74vh;
+  height: 64.5vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 55%;
+  width: 70%;
   margin: auto;
 }
 
 .contact-title {
-  margin-top: 2rem;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
-.contact-title h1 {
+.contact-title .main-title {
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 7rem;
 }
-.contact-title p {
+.contact-title .main-sub-title {
   text-align: center;
+  font-size: 3rem;
 }
 
 form {
@@ -698,9 +705,10 @@ form {
 
 input,
 textarea {
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   width: 100%;
-  padding: 1.2rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
 
 label {
@@ -708,6 +716,7 @@ label {
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  font-size: 1.6rem;
 }
 
 .form-name,
@@ -722,27 +731,27 @@ label {
 }
 
 .submit-btn {
-  width: 95%;
+  width: 98.5%;
+  background-color: rgb(123, 123, 123);
+  color: white;
+  border-radius: 0.9rem;
 }
 
 #footer {
-  height: 10vh;
-  background-color: rgb(233, 233, 233);
+  height: 10.5vh;
+  background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.07), 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+}
+#footer .footer-copyright {
+  font-size: 1.6rem;
+  color: black;
+  margin: 2rem;
 }
 
-@media only screen and (max-width: 792px) {
-  .contact-container {
-    height: 74vh;
-    width: 100%;
-    margin: auto;
-  }
-}
 #youtube {
-  height: 100vh;
+  height: 100%;
   background-color: rgb(50, 48, 48);
   display: flex;
   justify-content: space-between;
@@ -763,11 +772,11 @@ label {
   color: rgb(255, 255, 255);
 }
 #youtube .youtube-title-container .sub-title {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: rgb(245, 245, 114);
 }
 #youtube .youtube-info-container {
-  width: 80%;
+  width: 100%;
   height: 10vh;
   display: flex;
   justify-content: space-around;
@@ -776,58 +785,108 @@ label {
   color: white;
 }
 #youtube .youtube-info-container .info {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
 }
 #youtube .youtube-grid {
-  height: 60vh;
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  min-height: 100vh;
   cursor: pointer;
-  width: 80%;
+  width: 90%;
   margin: auto;
-  display: grid;
-  grid-template-columns: repeat(5, minmax(150px, 300px));
-  grid-template-rows: repeat(3, minmax(100px, 300px));
-  grid-gap: 1rem;
+  display: flex;
   justify-content: center;
-  border-radius: 10px;
-  overflow: hidden;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: auto;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 #youtube .youtube-image {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: fill;
+     object-fit: fill;
+  margin-bottom: 1rem;
 }
-#youtube .image-one {
-  grid-column: 1/3;
-  grid-row: 1/2;
-}
-#youtube .image-two {
-  grid-column: 1/3;
-}
-#youtube .image-three {
-  grid-column: 3/5;
-}
-#youtube .image-four {
-  grid-column: 5/6;
-  grid-row: 2/3;
-}
-#youtube .image-five {
-  grid-column: 4/6;
-}
-#youtube .image-six {
-  grid-column: 4/6;
-  grid-row: 1/2;
-}
-#youtube .image-seven {
-  grid-column: 3/4;
-  grid-row: 3/4;
-}
-#youtube .image-eight {
-  grid-column: 3/4;
-  grid-row: 1/2;
-}
-#youtube .image-nine {
-  grid-column: 1/3;
-  grid-row: 3/4;
+
+@media only screen and (min-width: 860px) {
+  #youtube .youtube-title-container {
+    height: 18vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  #youtube .youtube-title-container .title {
+    font-size: 7rem;
+    color: rgb(255, 255, 255);
+  }
+  #youtube .youtube-title-container .sub-title {
+    font-size: 1.8rem;
+    color: rgb(245, 245, 114);
+  }
+  #youtube .youtube-info-container {
+    width: 80%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+  }
+  #youtube .youtube-info-container .info {
+    font-size: 1.6rem;
+  }
+  #youtube .youtube-grid {
+    height: 60vh;
+    cursor: pointer;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(150px, 300px));
+    grid-template-rows: repeat(3, minmax(100px, 300px));
+    grid-gap: 1rem;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: none;
+  }
+  #youtube .youtube-image {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #youtube .image-one {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  #youtube .image-two {
+    grid-column: 1/3;
+  }
+  #youtube .image-three {
+    grid-column: 3/5;
+  }
+  #youtube .image-four {
+    grid-column: 5/6;
+    grid-row: 2/3;
+  }
+  #youtube .image-five {
+    grid-column: 4/6;
+  }
+  #youtube .image-six {
+    grid-column: 4/6;
+    grid-row: 1/2;
+  }
+  #youtube .image-seven {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+  #youtube .image-eight {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  #youtube .image-nine {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
 }/*# sourceMappingURL=style.css.map */
