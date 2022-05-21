@@ -10,7 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  width: 50%;
   margin: auto;
 }
 
@@ -36,7 +36,6 @@ form {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
 }
 
 input,
@@ -93,6 +92,98 @@ label {
 }
 
 //mobile
-@media only screen and (max-width: 792px) {
+@media only screen and (max-width: 746px) {
+  .contact-container {
+    // height: 64.5vh;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    width: 80%;
+    // margin: auto;
+  }
+
+  .contact-title {
+    // height: 20vh;
+    // display: flex;
+    // justify-content: center;
+    // align-content: center;
+    // flex-direction: column;
+    .main-title {
+      // text-align: center;
+      font-size: 5rem;
+    }
+    .main-sub-title {
+      // text-align: center;
+      font-size: 2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 545px){
+
+  input,
+  textarea {
+    font-size: 1.3rem;
+    width: 100%;
+    padding: .8rem;
+    border-radius: .5rem;
+  }
+
+  form {
+    height: 100px;
+  }
+
+  #contact {
+    height: 90vh;
+    scroll-margin-top: 5rem;
+    background-color: rgb(237, 237, 237);
+    
+  }
+
+  .contact-container {
+    height: 70vh;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    width: 100%;
+    // margin: auto;
+    // padding-bottom: 4rem;
+  }
+
+  .contact-title {
+    height: 12.5vh;
+    // display: flex;
+    // justify-content: center;
+    // align-content: center;
+    // flex-direction: column;
+    .main-title {
+      // text-align: center;
+      font-size: 3.3rem;
+    }
+    .main-sub-title {
+      // text-align: center;
+      font-size: 1.3rem;
+    }
+  }
+
+  form {
+    width: 95%;
+  }
+
+  #footer {
+    height: 8.5vh;
+    // background-color: rgb(255, 255, 255);
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // border: 1px solid black;
   
+    .footer-copyright{
+      font-size: 1.2rem;
+      // color: black;
+      // padding-left: 20em;
+      // margin: 2rem;
+      // background-color: aqua;
+    }
+  }
 }

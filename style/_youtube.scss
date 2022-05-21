@@ -57,6 +57,7 @@
         object-fit: fill;
         margin-bottom: 1rem;
     }
+    
 }
 
 //desktop view 
@@ -148,6 +149,16 @@
         .image-nine{
             grid-column: 1 / 3;
             grid-row: 3 / 4;
+        }
+
+        .image-one, a{
+            // display: block;
+            // background-color: aquamarine;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            grid-column: 1 / 3;
+            grid-row:  1 / 2;
         }
     }
 }

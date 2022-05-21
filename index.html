@@ -146,11 +146,12 @@
         <h2 class="info">Total Subscribers: 14,040</h2>
       </div>
       <div class="youtube-grid">
-        <img
-          src="./images/YT page/Sound.jpeg"
-          class="youtube-image image-one"
-          alt=""
-        />
+        <a href="http://www.youtube.com">
+          <img
+            src="./images/YT page/Sound.jpeg"
+            class="youtube-image image-one"
+            alt=""
+        /></a>
         <img
           src="./images/YT page/h500.jpg"
           class="youtube-image image-two"
@@ -202,46 +203,38 @@
 
       <div class="projects-container">
         <div class="project-window">
-          <h2 class="project-title">Pomodoro Timer</h2>
-          <div class="red mac-circle"></div>
-          <div class="yellow mac-circle"></div>
-          <div class="green mac-circle"></div>
-          <div class="boxes-button-container">
-            <button class="view-btn">VIEW APP</button>
-            <button class="code-btn">VIEW CODE</button>
-          </div>
-        </div>
-
-        <div class="project-window">
           <h2 class="project-title">Loteria</h2>
           <div class="red mac-circle"></div>
           <div class="yellow mac-circle"></div>
           <div class="green mac-circle"></div>
           <div class="boxes-button-container">
-            <button class="view-btn">VIEW APP</button>
-            <button class="code-btn">VIEW CODE</button>
+            <p class="project-tools-used">HTML | CSS | JS</p>
+            <p class="project-info">
+              Latin America's version of Bingo! They use images instead of
+              numbers
+            </p>
+            <div class="inner-button-container">
+              <button class="view-btn">VIEW APP</button>
+              <button class="code-btn">VIEW CODE</button>
+            </div>
           </div>
         </div>
 
         <div class="project-window">
-          <h2 class="project-title">Array simulator</h2>
+          <h2 class="project-title">Pomodoro Timer</h2>
           <div class="red mac-circle"></div>
           <div class="yellow mac-circle"></div>
           <div class="green mac-circle"></div>
           <div class="boxes-button-container">
-            <button class="view-btn">VIEW APP</button>
-            <button class="code-btn">VIEW CODE</button>
-          </div>
-        </div>
-
-        <div class="project-window">
-          <h2 class="project-title">Memory Vision</h2>
-          <div class="red mac-circle"></div>
-          <div class="yellow mac-circle"></div>
-          <div class="green mac-circle"></div>
-          <div class="boxes-button-container">
-            <button class="view-btn">VIEW APP</button>
-            <button class="code-btn">VIEW CODE</button>
+            <p class="project-tools-used">HTML | CSS | JS</p>
+            <p class="project-info">
+              Latin America's version of Bingo! They use images instead of
+              numbers
+            </p>
+            <div class="inner-button-container">
+              <button class="view-btn">VIEW APP</button>
+              <button class="code-btn">VIEW CODE</button>
+            </div>
           </div>
         </div>
       </div>
@@ -255,7 +248,7 @@
         </p>
       </div>
       <div class="contact-container">
-        <form action="action_page.php">
+        <form action="https://formsubmit.co/dc5trust@gmail.com" method="post">
           <div class="form-name">
             <label for="name">NAME</label>
             <input
@@ -263,6 +256,7 @@
               id="name"
               name="name"
               placeholder="John AppleSeed"
+              required
             />
           </div>
 
@@ -273,6 +267,7 @@
               id="email"
               name="email"
               placeholder="example@company.com"
+              required
             />
           </div>
 
@@ -283,9 +278,10 @@
               name="subject"
               placeholder="Your message"
               style="height: 200px"
+              required
             ></textarea>
           </div>
-          <button class="submit-btn">Submit</button>
+          <button class="submit-btn" type="submit">Submit</button>
         </form>
       </div>
 

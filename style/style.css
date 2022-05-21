@@ -527,12 +527,11 @@ a {
 }
 
 .projects-title-container {
+  height: 18vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.7rem;
-  height: 5rem;
-  padding-top: 3rem;
+  font-size: 7rem;
 }
 
 .projects-container {
@@ -543,19 +542,21 @@ a {
   grid-gap: 1rem;
   justify-items: center;
   align-items: center;
-  width: 85%;
+  width: 95%;
   margin: auto;
 }
 
 .project-window {
   height: 55rem;
-  width: 35rem;
-  background-color: rgb(255, 255, 255);
+  width: 45rem;
+  background-color: rgb(255, 251, 251);
   border-radius: 5%;
-  border-top: 3.8rem solid rgb(93, 93, 93);
-  background-image: url("/images/Mountains.jpg");
-  background-size: 180%;
+  border-top: 3.8rem solid #323232;
+  background-image: url("/images/projectsImages/Loteria Project export.png");
+  background-size: 120%;
   background-position: cover;
+  background-repeat: no-repeat;
+  background-position: top;
   position: relative;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.1);
 }
@@ -584,11 +585,15 @@ a {
 }
 .project-window .boxes-button-container {
   position: absolute;
-  bottom: 40px;
+  bottom: 0px;
+  height: 21rem;
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-direction: column;
+  border-bottom-left-radius: 12%;
+  border-bottom-right-radius: 5%;
 }
 
 .project-boxes {
@@ -597,19 +602,16 @@ a {
   background-color: rgb(255, 255, 255);
   justify-self: center;
   border-radius: 5%;
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
 
 .project-image-container {
-  background-image: url("/images/Mountains.jpg");
   height: 40rem;
   width: 35rem;
   background-size: 180%;
   background-position: cover;
   border-top-left-radius: 5%;
   border-top-right-radius: 5%;
-  overflow: hidden;
 }
 
 .boxes-sub-container {
@@ -621,12 +623,24 @@ a {
   height: 12rem;
 }
 
+.inner-button-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 95%;
+}
+
 .project-title {
   font-size: 1.3rem;
 }
 
-.project-description {
-  font-size: 0.8rem;
+.project-tools-used {
+  font-size: 2.1rem;
+}
+
+.project-info {
+  font-size: 1.5rem;
+  padding: 3.5rem;
 }
 
 @media only screen and (max-width: 900px) {
@@ -675,7 +689,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  width: 50%;
   margin: auto;
 }
 
@@ -750,6 +764,63 @@ label {
   margin: 2rem;
 }
 
+@media only screen and (max-width: 746px) {
+  .contact-container {
+    width: 80%;
+  }
+
+  .contact-title .main-title {
+    font-size: 5rem;
+  }
+  .contact-title .main-sub-title {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 545px) {
+  input,
+textarea {
+    font-size: 1.3rem;
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+  }
+
+  form {
+    height: 100px;
+  }
+
+  #contact {
+    height: 90vh;
+    scroll-margin-top: 5rem;
+    background-color: rgb(237, 237, 237);
+  }
+
+  .contact-container {
+    height: 70vh;
+    width: 100%;
+  }
+
+  .contact-title {
+    height: 12.5vh;
+  }
+  .contact-title .main-title {
+    font-size: 3.3rem;
+  }
+  .contact-title .main-sub-title {
+    font-size: 1.3rem;
+  }
+
+  form {
+    width: 95%;
+  }
+
+  #footer {
+    height: 8.5vh;
+  }
+  #footer .footer-copyright {
+    font-size: 1.2rem;
+  }
+}
 #youtube {
   height: 100%;
   background-color: rgb(50, 48, 48);
@@ -888,5 +959,13 @@ label {
   #youtube .image-nine {
     grid-column: 1/3;
     grid-row: 3/4;
+  }
+  #youtube .image-one, #youtube a {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+    width: 100%;
+    grid-column: 1/3;
+    grid-row: 1/2;
   }
 }/*# sourceMappingURL=style.css.map */
