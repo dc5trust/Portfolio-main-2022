@@ -521,7 +521,7 @@ a {
   }
 }
 #projects {
-  min-height: 150vh;
+  min-height: 170vh;
   background-color: rgb(255, 255, 255);
   scroll-margin-top: 4.5rem;
 }
@@ -552,13 +552,9 @@ a {
   background-color: rgb(255, 251, 251);
   border-radius: 5%;
   border-top: 3.8rem solid #323232;
-  background-image: url("/images/projectsImages/Loteria Project export.png");
-  background-size: 120%;
-  background-position: cover;
-  background-repeat: no-repeat;
-  background-position: top;
   position: relative;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 4rem;
 }
 .project-window .project-title {
   position: absolute;
@@ -594,6 +590,13 @@ a {
   flex-direction: column;
   border-bottom-left-radius: 12%;
   border-bottom-right-radius: 5%;
+}
+
+.project-images {
+  height: 30rem;
+  width: 45rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .project-boxes {
@@ -640,7 +643,18 @@ a {
 
 .project-info {
   font-size: 1.5rem;
-  padding: 3.5rem;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+}
+
+.view-btn, .code-btn {
+  background-color: #ffffff;
+  border: 2px solid #212121;
+  padding: 1.2rem 3rem;
+  color: rgb(0, 0, 0);
+}
+.view-btn:hover, .code-btn:hover {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
 @media only screen and (max-width: 900px) {
@@ -879,6 +893,9 @@ textarea {
 }
 
 @media only screen and (min-width: 860px) {
+  #youtube {
+    height: 95.5vh;
+  }
   #youtube .youtube-title-container {
     height: 18vh;
     display: flex;
@@ -897,7 +914,7 @@ textarea {
   }
   #youtube .youtube-info-container {
     width: 80%;
-    height: 10vh;
+    height: 13.5vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -908,7 +925,7 @@ textarea {
     font-size: 1.6rem;
   }
   #youtube .youtube-grid {
-    height: 60vh;
+    min-height: 60vh;
     cursor: pointer;
     width: 90%;
     margin: auto;
@@ -920,6 +937,7 @@ textarea {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: none;
+    margin-bottom: 4rem;
   }
   #youtube .youtube-image {
     height: 100%;
