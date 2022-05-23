@@ -1,8 +1,9 @@
 #tools {
-  height: 100vh;
+  min-height: 100vh;
   z-index: 14;
   scroll-margin-top: 6rem;
   margin-bottom: 2.5rem;
+  overflow-y: scroll;
 }
 
 .mac-circle{
@@ -20,12 +21,9 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  // background-color: #e9c932;
   
   .tools-popup-information{
     height: 80rem;
-    // width: 30rem;
-    // background-color: #ffcece;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,7 +69,6 @@
   align-items: center;
   flex-direction: column;
   height: 18vh;
-  // background-color: #0a73b7;
 }
 .tools-title {
   font-size: 7rem;
@@ -81,7 +78,6 @@
 }
 
 .tools-container {
-  // width: 45%;
   height: 100%;
   display: grid;
   justify-content: center;
@@ -112,9 +108,6 @@
       background: rgb(244, 244, 244);
       box-shadow: inset 0px 0px 5px #c1c1c1;
       border: none;
-      // box-shadow: inset 0px 0px 5px #c1c1c1;
-      // box-shadow: inset 0px 0px 5px #c1c1c1;
-      // outline: none;
     }
   }
 }
@@ -160,17 +153,24 @@
 }
 
 //Tools Mobile Page
+@media only screen and (max-width: 900px){
+  .tools-container {
+    width: 39rem;
+    height: 43rem;
+    grid-template-rows: repeat(3, 13rem);
+    
+  
+    .circle {
+      height: 12rem;
+      width: 12rem;
+      font-size: .8rem;
+    }
+  }
+}
 
 @media only screen and (max-width: 760px) {
-  body {
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
-  }
-  html {
-    height: -webkit-fill-available;
-  }
   #tools {
-    height: 100%;
+    min-height: 100%;
     margin-bottom: 3rem;
   }
   .tools-container {
@@ -191,9 +191,6 @@
       height: 12rem;
       width: 12rem;
       font-size: .8rem;
-      &:hover {
-        
-      }
     }
   }
   .tools-main-container{
@@ -219,7 +216,7 @@
   
     .pop-up{
       height: 25rem;
-      width: 30rem;
+      width: 25rem;
     }
     .pop-up-description{
       font-size: 1.3rem;
@@ -245,3 +242,30 @@
     overflow: hidden;
   }
 }
+
+//media query for Height (tools page)
+// @media only screen and (max-height: 1009px){
+//   #tools {
+//     height: 130vh;
+    
+//   }
+// }
+
+// @media only screen and (max-height: 930px){
+//   #tools {
+//     min-height: 150vh;
+    
+//   }
+// }
+
+// @media only screen and (max-height: 699px){
+//   #tools {
+//     min-height: 170vh;
+//   }
+// }
+
+// @media only screen and (max-height: 549px){
+//   #tools {
+//     min-height: 180vh;
+//   }
+// }

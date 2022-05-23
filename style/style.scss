@@ -7,8 +7,6 @@
 body {
   font-family: "Poppins", sans-serif;
   transition: background-color 1.3s ease-in-out;
-  // overflow: hidden;
-  
 }
 
 
@@ -121,13 +119,11 @@ a {
   left: 0;
   z-index: 15;
   overflow: auto;
-  // position: relative;
   li{
     list-style: none;
     font-size: 6rem;
   }
   .x-btn{
-    // background-color: aquamarine;
     position: absolute;
     font-size: 6rem;
     top: 2rem;
@@ -172,6 +168,12 @@ a {
   .dots-container {
     display: grid;
     cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 299px){
+  html{
+    display: none;
   }
 }
 

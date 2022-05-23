@@ -40,7 +40,6 @@
 
     .youtube-grid{
         min-height: 100vh;
-        cursor: pointer;
         width: 90%;
         margin: auto;
         display: flex;
@@ -58,6 +57,15 @@
         margin-bottom: 1rem;
     }
     
+}
+
+#channel-btn{
+    box-shadow: 0 10px 20px rgba(0,0,0,.1), 0 4px 4px 0 rgba(0,0,0,.1);
+    background-color: #ffffff;
+    border: 2px solid #8a8a8a;
+    padding: 1rem .9rem;
+    font-size: .9rem;
+    color: black;
 }
 
 //desktop view 
@@ -97,7 +105,6 @@
 
         .youtube-grid{
             min-height: 60vh;
-            cursor: pointer;
             width: 90%;
             margin: auto;
             display: grid;
@@ -111,7 +118,7 @@
             margin-bottom: 4rem;
         }
     
-        .youtube-image{
+        .youtube-image, a{
             height: 100%;
             width: 100%;
             object-fit: cover;
@@ -151,15 +158,43 @@
             grid-column: 1 / 3;
             grid-row: 3 / 4;
         }
+    }
+}
 
-        .image-one, a{
-            // display: block;
-            // background-color: aquamarine;
-            object-fit: cover;
-            height: 100%;
+@media only screen and (max-width: 456px ){
+    #youtube{
+        
+        // .youtube-title-container{
+        //     height: 18vh;
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: center;
+        //     flex-direction: column;
+        //     width: 100%;
+        //     .title{
+        //         font-size: 7rem;
+        //         color: rgb(255, 255, 255);
+        //     }
+        //     .sub-title{
+        //         font-size: 1.4rem;
+        //         color: rgb(245, 245, 114);
+        //     }
+        // }
+        .youtube-info-container{
             width: 100%;
-            grid-column: 1 / 3;
-            grid-row:  1 / 2;
+            // height: 10vh;
+            // display: flex;
+            justify-content: space-around;
+            // align-items: center;
+            // flex-direction: row;
+            // color: white;
+            // background-color: aquamarine;
+            flex-wrap: wrap;
+            .info{
+                font-size: 1.2rem;
+                // background-color: aqua;
+            }
         }
     }
+    
 }
