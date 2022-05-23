@@ -1,7 +1,8 @@
 #contact {
   height: 84.5vh;
-    scroll-margin-top: 5rem;
+  scroll-margin-top: 5rem;
   background-color: rgb(237, 237, 237);
+ 
   
 }
 
@@ -103,26 +104,15 @@ label {
 //mobile
 @media only screen and (max-width: 746px) {
   .contact-container {
-    // height: 64.5vh;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
     width: 80%;
-    // margin: auto;
   }
 
   .contact-title {
-    // height: 20vh;
-    // display: flex;
-    // justify-content: center;
-    // align-content: center;
-    // flex-direction: column;
+    
     .main-title {
-      // text-align: center;
       font-size: 5rem;
     }
     .main-sub-title {
-      // text-align: center;
       font-size: 2rem;
     }
   }
@@ -144,33 +134,20 @@ label {
 
   #contact {
     height: 90vh;
-    scroll-margin-top: 5rem;
-    background-color: rgb(237, 237, 237);
-    
   }
 
   .contact-container {
-    height: 70vh;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
+    height: 72vh;
     width: 100%;
-    // margin: auto;
-    // padding-bottom: 4rem;
   }
 
   .contact-title {
     height: 12.5vh;
-    // display: flex;
-    // justify-content: center;
-    // align-content: center;
-    // flex-direction: column;
+  
     .main-title {
-      // text-align: center;
       font-size: 3.3rem;
     }
     .main-sub-title {
-      // text-align: center;
       font-size: 1.3rem;
     }
   }
@@ -181,18 +158,9 @@ label {
 
   #footer {
     height: 8.5vh;
-    // background-color: rgb(255, 255, 255);
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // border: 1px solid black;
   
     .footer-copyright{
       font-size: 1.2rem;
-      // color: black;
-      // padding-left: 20em;
-      // margin: 2rem;
-      // background-color: aqua;
     }
   }
 }

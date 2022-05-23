@@ -188,12 +188,13 @@ a {
 }
 #introduction-container .intro-name .name {
   font-size: 6.5rem;
-  color: rgb(255, 179, 36);
+  color: rgba(71, 244, 239, 0.569);
 }
 #introduction-container .intro-sub {
   font-size: 1.6rem;
   padding: 0.5rem;
   color: rgb(255, 255, 255);
+  text-align: left;
 }
 #introduction-container .intro-self-memoji {
   flex-basis: 30rem;
@@ -842,12 +843,10 @@ textarea {
 
   #contact {
     height: 90vh;
-    scroll-margin-top: 5rem;
-    background-color: rgb(237, 237, 237);
   }
 
   .contact-container {
-    height: 70vh;
+    height: 72vh;
     width: 100%;
   }
 
