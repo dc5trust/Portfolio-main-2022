@@ -69,9 +69,18 @@ label {
 
 .submit-btn {
   width: 98.5%;
-  background-color: rgb(123, 123, 123);
-  color: white;
+  // background-color: rgb(123, 123, 123);
+  // color: white;
   border-radius: .9rem;
+  background-color: #ffffff;
+  border: 2px solid #212121;
+  padding: 1.2rem 3rem;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+
+  &:hover{
+    box-shadow: none;
+  }
 }
 
 #footer {
