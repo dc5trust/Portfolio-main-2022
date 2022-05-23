@@ -150,8 +150,9 @@
   border: 2px solid #212121;
   padding: 1.2rem 3rem;
   color: rgb(0, 0, 0);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.1);
   &:hover{
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: none;
   }
 }
 

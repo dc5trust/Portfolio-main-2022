@@ -6,7 +6,7 @@
   z-index: 1;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(rgba(0, 0, 0, 1.0), transparent), linear-gradient(rgba(0, 0, 0, .10), transparent), url(/images/Mountainsfour.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), transparent), linear-gradient(rgba(0, 0, 0, .10), transparent), url(/images/Mountainsfour.jpg);
   background-size: cover;
 
   .introduction-part-one {
@@ -34,7 +34,7 @@
 
     .name {
       font-size: 6.5rem;
-      color: rgb(164, 255, 252);
+      color: rgb(255, 179, 36);
     }
   }
 
