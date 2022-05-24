@@ -139,13 +139,18 @@ a {
 
 //Mobile
 
-@media (orientation: landscape) {
+// @media (orientation: landscape) {
+//   html{
+//     display: none;
+//   }
+// }
+@media only screen and (max-height: 500px){
   html{
     display: none;
   }
 }
 
-@media screen and (max-width: 979px) {
+@media only screen and (max-width: 979px) {
   .nav-title {
     text-align: center;
     width: 100%;
