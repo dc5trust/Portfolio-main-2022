@@ -2,8 +2,8 @@
   min-height: 100vh;
   z-index: 14;
   scroll-margin-top: 6rem;
-  margin-bottom: 2.5rem;
-  overflow-y: scroll;
+  // margin-bottom: 2.5rem;
+  // overflow-y: auto;
 }
 
 .mac-circle{
@@ -78,16 +78,14 @@
 }
 
 .tools-container {
-  height: 100%;
+  height: 65rem;
   display: grid;
   justify-content: center;
   align-items: center;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 30rem);
+  grid-template-rows: repeat(3, 20rem);
   grid-gap: 1rem;
   flex-grow: 1;
-  
-
   .circle {
     height: 15.5rem;
     width: 15.5rem;
@@ -159,7 +157,6 @@
     height: 43rem;
     grid-template-rows: repeat(3, 13rem);
     
-  
     .circle {
       height: 12rem;
       width: 12rem;

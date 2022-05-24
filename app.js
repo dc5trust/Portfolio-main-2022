@@ -12,6 +12,7 @@ xBtnMobileMenu.addEventListener('click', closeMobileMenu);
 function openMobileMenu(){
     mobileMenu.style.display = 'flex';
     nav.setAttribute('style', 'display: none');
+    document.body.style.overflow = 'hidden';
 }
 
 mobileLinks.forEach((link)=>{
@@ -20,6 +21,7 @@ mobileLinks.forEach((link)=>{
 
 function openMobileLinks(e){
     mobileMenu.style.display = 'none'
+    document.body.style.overflow = 'visible';
     nav.setAttribute('style', 'display: flex');
 
 }
@@ -27,6 +29,7 @@ function openMobileLinks(e){
 function closeMobileMenu(){
     mobileMenu.setAttribute('style', 'display: none');
     nav.setAttribute('style', 'display: flex');
+    document.body.style.overflow = 'visible';
 }
 
 

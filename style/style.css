@@ -108,8 +108,8 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 15;
-  overflow: auto;
+  z-index: 17;
+  overflow: hidden;
 }
 .mobile-nav-popup li {
   list-style: none;
@@ -123,6 +123,15 @@ a {
   cursor: pointer;
 }
 
+.warning {
+  display: none;
+}
+
+@media (orientation: landscape) {
+  html {
+    display: none;
+  }
+}
 @media screen and (max-width: 979px) {
   .nav-title {
     text-align: center;
@@ -312,8 +321,6 @@ a {
   min-height: 100vh;
   z-index: 14;
   scroll-margin-top: 6rem;
-  margin-bottom: 2.5rem;
-  overflow-y: scroll;
 }
 
 .mac-circle {
@@ -386,12 +393,12 @@ a {
 }
 
 .tools-container {
-  height: 100%;
+  height: 65rem;
   display: grid;
   justify-content: center;
   align-items: center;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 30rem);
+  grid-template-rows: repeat(3, 20rem);
   grid-gap: 1rem;
   flex-grow: 1;
 }
@@ -965,16 +972,6 @@ textarea {
   width: 100%;
   -o-object-fit: fill;
      object-fit: fill;
-  margin-bottom: 1rem;
-}
-
-#channel-btn {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
-  border: 2px solid #8a8a8a;
-  padding: 1rem 0.9rem;
-  font-size: 0.9rem;
-  color: black;
 }
 
 @media only screen and (min-width: 860px) {
@@ -1064,6 +1061,24 @@ textarea {
   }
 }
 @media only screen and (max-width: 456px) {
+  #youtube .youtube-grid {
+    min-height: 20vh;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(70px, 200px));
+    grid-template-rows: repeat(5, minmax(60px, 110px));
+    grid-gap: 0rem;
+    overflow: hidden;
+    box-shadow: none;
+    margin-bottom: 0.5rem;
+  }
+  #youtube .youtube-image, #youtube a {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-bottom: 0rem;
+  }
   #youtube .youtube-info-container {
     width: 100%;
     justify-content: space-around;
@@ -1071,5 +1086,8 @@ textarea {
   }
   #youtube .youtube-info-container .info {
     font-size: 1.2rem;
+  }
+  #youtube .image-nine {
+    background-color: aqua;
   }
 }/*# sourceMappingURL=style.css.map */

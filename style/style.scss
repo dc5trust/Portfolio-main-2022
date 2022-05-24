@@ -117,8 +117,8 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 15;
-  overflow: auto;
+  z-index: 17;
+  overflow: hidden;
   li{
     list-style: none;
     font-size: 6rem;
@@ -132,7 +132,18 @@ a {
   }
 }
 
+// Warning Message when Device is rotated
+.warning{
+  display: none;
+}
+
 //Mobile
+
+@media (orientation: landscape) {
+  html{
+    display: none;
+  }
+}
 
 @media screen and (max-width: 979px) {
   .nav-title {
