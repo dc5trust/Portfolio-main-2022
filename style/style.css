@@ -340,7 +340,7 @@ a {
   flex-wrap: wrap;
 }
 .tools-main-container .tools-popup-information {
-  height: 80rem;
+  height: 65rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -468,6 +468,11 @@ a {
 }
 
 @media only screen and (max-width: 900px) {
+  #tools {
+    min-height: 120vh;
+    margin-bottom: 3rem;
+  }
+
   .tools-container {
     width: 39rem;
     height: 43rem;
@@ -481,7 +486,7 @@ a {
 }
 @media only screen and (max-width: 760px) {
   #tools {
-    min-height: 100%;
+    height: 100%;
     margin-bottom: 3rem;
   }
 

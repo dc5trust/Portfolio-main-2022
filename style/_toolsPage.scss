@@ -3,7 +3,7 @@
   z-index: 14;
   scroll-margin-top: 6rem;
   // margin-bottom: 2.5rem;
-  // overflow-y: auto;
+  // overflow: auto;
 }
 
 .mac-circle{
@@ -23,7 +23,7 @@
   flex-wrap: wrap;
   
   .tools-popup-information{
-    height: 80rem;
+    height: 65rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,6 +152,10 @@
 
 //Tools Mobile Page
 @media only screen and (max-width: 900px){
+  #tools {
+    min-height: 120vh;
+    margin-bottom: 3rem;
+  }
   .tools-container {
     width: 39rem;
     height: 43rem;
@@ -165,9 +169,11 @@
   }
 }
 
+
+
 @media only screen and (max-width: 760px) {
   #tools {
-    min-height: 100%;
+    height: 100%;
     margin-bottom: 3rem;
   }
   .tools-container {
