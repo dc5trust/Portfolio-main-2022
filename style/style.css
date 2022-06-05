@@ -123,10 +123,6 @@ a {
   cursor: pointer;
 }
 
-.warning {
-  display: none;
-}
-
 @media only screen and (max-height: 450px) {
   html {
     display: none;
