@@ -312,7 +312,7 @@ a {
   }
 }
 #tools {
-  min-height: 100vh;
+  min-height: 110vh;
   z-index: 14;
   scroll-margin-top: 6rem;
 }
@@ -387,7 +387,7 @@ a {
 }
 
 .tools-container {
-  min-height: 65rem;
+  height: 65rem;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -463,7 +463,6 @@ a {
 
 @media only screen and (max-width: 900px) {
   #tools {
-    min-height: 120vh;
     margin-bottom: 3rem;
   }
 
@@ -480,7 +479,7 @@ a {
 }
 @media only screen and (max-width: 760px) {
   #tools {
-    height: 100%;
+    min-height: 100vh;
     margin-bottom: 3rem;
   }
 
@@ -514,9 +513,6 @@ a {
   }
 }
 @media only screen and (max-width: 518px) {
-  .tools-main-container {
-    height: 100%;
-  }
   .tools-main-container .pop-up {
     height: 25rem;
     width: 25rem;
@@ -919,7 +915,7 @@ textarea {
   }
 }
 #youtube {
-  height: 100%;
+  min-height: 100vh;
   background-color: rgb(50, 48, 48);
   display: flex;
   justify-content: space-between;
@@ -928,7 +924,7 @@ textarea {
   scroll-margin-top: 6rem;
 }
 #youtube .youtube-title-container {
-  height: 18vh;
+  min-height: 18vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -945,7 +941,7 @@ textarea {
 }
 #youtube .youtube-info-container {
   width: 100%;
-  height: 10vh;
+  min-height: 10vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
