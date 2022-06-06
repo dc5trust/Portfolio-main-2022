@@ -247,6 +247,9 @@ a {
   }
 }
 @media only screen and (max-width: 795px) {
+  #introduction-container {
+    background-position: center;
+  }
   #introduction-container .introduction-part-one {
     display: flex;
     justify-content: center;
