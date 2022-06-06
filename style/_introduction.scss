@@ -6,8 +6,9 @@
   z-index: 1;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), transparent), linear-gradient(rgba(0, 0, 0, .10), transparent), url(/images/Mountainsfour.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), transparent), linear-gradient(rgba(0, 0, 0, .10), transparent), url(/images/Drawing.jpg);
   background-size: cover;
+  // background-position: center;
 
   .introduction-part-one {
     display: flex;
