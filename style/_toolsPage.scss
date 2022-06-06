@@ -16,11 +16,12 @@
 }
 
 .tools-main-container{
-  height: 80vh;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  // background-color: #61dbfb;
   
   .tools-popup-information{
     height: 65rem;
@@ -68,7 +69,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 18vh;
+  min-height: 18vh;
 }
 .tools-title {
   font-size: 7rem;
@@ -78,7 +79,7 @@
 }
 
 .tools-container {
-  height: 65rem;
+  min-height: 65rem;
   display: grid;
   justify-content: center;
   align-items: center;

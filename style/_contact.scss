@@ -1,11 +1,11 @@
 #contact {
-  height: 84.5vh;
+  min-height: 84.5vh;
   scroll-margin-top: 5rem;
   background-color: rgb(237, 237, 237);
 }
 
 .contact-container {
-  height: 64.5vh;
+  min-height: 64.5vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +14,7 @@
 }
 
 .contact-title {
-  height: 20vh;
+  min-height: 20vh;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -86,7 +86,7 @@ textarea{
 }
 
 #footer {
-  height: 10.5vh;
+  min-height: 10.5vh;
   background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;

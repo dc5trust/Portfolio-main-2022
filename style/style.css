@@ -123,11 +123,6 @@ a {
   cursor: pointer;
 }
 
-@media only screen and (max-height: 450px) {
-  html {
-    display: none;
-  }
-}
 @media only screen and (max-width: 979px) {
   .nav-title {
     text-align: center;
@@ -332,7 +327,7 @@ a {
 }
 
 .tools-main-container {
-  height: 80vh;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -380,7 +375,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 18vh;
+  min-height: 18vh;
 }
 
 .tools-title {
@@ -392,7 +387,7 @@ a {
 }
 
 .tools-container {
-  height: 65rem;
+  min-height: 65rem;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -751,13 +746,13 @@ a {
   }
 }
 #contact {
-  height: 84.5vh;
+  min-height: 84.5vh;
   scroll-margin-top: 5rem;
   background-color: rgb(237, 237, 237);
 }
 
 .contact-container {
-  height: 64.5vh;
+  min-height: 64.5vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -766,7 +761,7 @@ a {
 }
 
 .contact-title {
-  height: 20vh;
+  min-height: 20vh;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -834,7 +829,7 @@ textarea {
 }
 
 #footer {
-  height: 10.5vh;
+  min-height: 10.5vh;
   background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
