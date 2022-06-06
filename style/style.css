@@ -163,7 +163,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 95vh;
+  min-height: 95vh;
   z-index: 1;
   position: relative;
   overflow: hidden;
@@ -222,7 +222,7 @@ a {
 }
 
 .introduction-button-container {
-  height: 12.5rem;
+  min-height: 12.5rem;
   width: 48%;
   display: flex;
   justify-content: space-between;
@@ -312,7 +312,7 @@ a {
   }
 }
 #tools {
-  min-height: 110vh;
+  min-height: 100vh;
   z-index: 14;
   scroll-margin-top: 6rem;
 }
@@ -547,7 +547,7 @@ a {
 }
 
 .projects-title-container {
-  height: 18vh;
+  min-height: 18vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -695,7 +695,7 @@ a {
 }
 @media only screen and (max-width: 763px) {
   .projects-title-container {
-    height: 18vh;
+    min-height: 18vh;
     font-size: 4.5rem;
   }
 
@@ -863,7 +863,7 @@ textarea {
   }
 
   #contact {
-    height: 90vh;
+    min-height: 90vh;
   }
 
   .contact-container {
@@ -872,7 +872,7 @@ textarea {
   }
 
   .contact-title {
-    height: 12.5vh;
+    min-height: 12.5vh;
   }
   .contact-title .main-title {
     font-size: 3.3rem;
@@ -886,7 +886,7 @@ textarea {
   }
 
   #footer {
-    height: 8.5vh;
+    min-height: 8.5vh;
   }
   #footer .footer-copyright {
     font-size: 1.2rem;
@@ -971,10 +971,10 @@ textarea {
 
 @media only screen and (min-width: 860px) {
   #youtube {
-    height: 95.5vh;
+    min-height: 95.5vh;
   }
   #youtube .youtube-title-container {
-    height: 18vh;
+    min-height: 18vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -991,7 +991,7 @@ textarea {
   }
   #youtube .youtube-info-container {
     width: 80%;
-    height: 13.5vh;
+    min-height: 13.5vh;
     display: flex;
     justify-content: space-around;
     align-items: center;

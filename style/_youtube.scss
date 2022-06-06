@@ -63,10 +63,10 @@
 //desktop view 
 @media only screen and (min-width: 860px){
     #youtube{
-        height: 95.5vh;
+        min-height: 95.5vh;
         
         .youtube-title-container{
-        height: 18vh;
+        min-height: 18vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -83,7 +83,7 @@
     }
     .youtube-info-container{
         width: 80%;
-        height: 13.5vh;
+        min-height: 13.5vh;
         display: flex;
         justify-content: space-around;
         align-items: center;

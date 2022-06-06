@@ -5,7 +5,7 @@
 }
 
 .projects-title-container {
-  height: 18vh;
+  min-height: 18vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,7 +164,7 @@
 @media only screen and (max-width: 763px){
   
   .projects-title-container {
-    height: 18vh;
+    min-height: 18vh;
     font-size: 4.5rem;
   }
 

@@ -134,7 +134,7 @@ textarea{
   }
 
   #contact {
-    height: 90vh;
+    min-height: 90vh;
   }
 
   .contact-container {
@@ -143,7 +143,7 @@ textarea{
   }
 
   .contact-title {
-    height: 12.5vh;
+    min-height: 12.5vh;
   
     .main-title {
       font-size: 3.3rem;
@@ -158,7 +158,7 @@ textarea{
   }
 
   #footer {
-    height: 8.5vh;
+    min-height: 8.5vh;
   
     .footer-copyright{
       font-size: 1.2rem;
