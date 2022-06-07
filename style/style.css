@@ -952,7 +952,7 @@ textarea {
   font-size: 1.3rem;
 }
 #youtube .youtube-grid {
-  min-height: 100vh;
+  min-height: 80vh;
   width: 90%;
   margin: auto;
   display: flex;
@@ -971,7 +971,7 @@ textarea {
 
 @media only screen and (min-width: 860px) {
   #youtube {
-    min-height: 95.5vh;
+    min-height: 94.5vh;
   }
   #youtube .youtube-title-container {
     min-height: 18vh;
@@ -990,8 +990,8 @@ textarea {
     color: rgb(245, 245, 114);
   }
   #youtube .youtube-info-container {
+    min-height: 5.5vh;
     width: 80%;
-    min-height: 13.5vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -1007,7 +1007,7 @@ textarea {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(5, minmax(150px, 300px));
-    grid-template-rows: repeat(3, minmax(100px, 300px));
+    grid-template-rows: repeat(3, minmax(100px, 280px));
     grid-gap: 1rem;
     justify-content: center;
     border-radius: 10px;
