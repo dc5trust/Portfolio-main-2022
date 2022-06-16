@@ -16,7 +16,6 @@ https://developedbyhector.netlify.app
 ## Features 
 <ul>
   <li>Single Page website</li>
-  <li>modern</li>
 </ul>
 
 ## Desktop Images
